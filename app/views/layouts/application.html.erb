@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TheJourney</title>
+    <%= csrf_meta_tags %>
+
+    <script>
+      // In heroku app setting, there is a config varaible: RAILS_ENV = 'production'
+      // Using this value, we can check if it's in production or development mode.
+      <% if ENV["RAILS_ENV"] == 'production' %>
+        var env = 'production'
+      <% else %>
+        var env = 'development'
+      <% end %>
+    </script>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <%= render 'layouts/nav_bar' %>
+    <hr class="curly-lines">
+    <%= render 'layouts/flash' %>
+    <div>
+      <%= yield %>
+    </div>
+  </body>
+</html>

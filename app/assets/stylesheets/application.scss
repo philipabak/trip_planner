@@ -1,0 +1,67 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require chosen
+ *= require fullcalendar
+ *= require hopscotch
+ *= require_tree .
+ *= require_self
+ */
+
+@import 'bootstrap';
+@import "font-awesome";
+
+@font-face {
+  font-family: "Traveling-Through";
+  src: url('/assets/Traveling-Through');
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Traveling-Through", arial, sans-serif;
+}
+
+input {
+  font-family: arial, sans-serif;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+th {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  border-right: 1px solid black;
+}
+
+td {
+  font-size: 22px;
+  padding-left: 15px;
+}
+
+// Font Awesome Icon Color
+.fa {
+  color: crimson;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.flash-size {
+  font-size: 26px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

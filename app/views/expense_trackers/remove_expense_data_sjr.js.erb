@@ -1,0 +1,4 @@
+
+var all_et_data = '<%= j render "expense_trackers/expense_show_all", expense_trackers: @expense_trackers %>'
+$('#expense_show_sjr').empty();
+$('#expense_show_sjr').prepend(all_et_data);

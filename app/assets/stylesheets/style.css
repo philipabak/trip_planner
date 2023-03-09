@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Traveling-Through";
+  src: url(/assets/Traveling-Through.otf) format("truetype");
+}
+
+/*=========== Common Layout ==============*/
+.nav-center {
+  justify-content: center;
+  display: flex;
+}
+
+/* Nav > li > link_to*/
+.nav-anchor{
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  margin-left: 10px;
+}
+
+/* home_application: carousel images */
+.home-carousel {
+  height: 80vh;
+  width: 100%;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* home_application: anchor style */
+.link-style-button {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-color: #403636;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+/* application: custom hr tag*/
+hr.curly-lines {
+  height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+  border: 0;
+  margin-top: 0;
+}
+
+.home-content{
+  padding-top: 30px;
+  margin: 0 100px;
+}
+
+.home-trip-list > h3 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* ========= Simple_form error messge ========= */
+.has-error > .help-block {
+  color: red;
+}
+
+/*=========== Trip View ==============*/
+/*Google Map Api Size*/
+#map {
+ height: 500px;
+ width: 100%;
+}
+
+/* Trip#Show: Outermost div */
+.trip-show-container {
+  margin: 0 20px;
+}
+
+/* Trip#Show: Heart Icon */
+.heart-center {
+  padding-left: 37%;
+}
+
+/* Trip#Show: Geocode button */
+
+
+
+.backToPrevious {
+  width: 74px;
+  border-radius: 4px;
+}
+
+.backToPrevious:hover {
+  background-color: #555;
+}
+
+.go-to-forward {
+  border-radius: 4px;
+}
+
+.go-to-forward:hover {
+  background-color: #555;
+}
+
+
+
+
+/* Trip#Show: Chart and Calendar */
+.flexingRow {
+  /*width: 96%;*/
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*Trip#Show: Chart and Calendar*/
+.borderingDiv {
+  width: 43vw;
+  border-style: outset;
+}
+
+#calendar {
+  font-family: helvetica;
+}
+
+
+
+
+/* =========== User View ============== */
+/*  User#Show: vertical line */
+.user-profile {
+  padding-left: 50px;
+}
+
+/* User#Show: trips div */
+.my-trips {
+  margin-left: 50px;
+}
+
+/* User#Show: First div margin-top */
+.space-from-top {
+  margin-top: 3rem;
+}
+
+
+.inline-display {
+  display: inline-block;
+}
+
+.font-awesome-icon{
+  padding-left: 5%;
+  padding-top: 2%
+}
+
+.title {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+/* ==================== Form =================== */
+.center {
+   margin: auto;
+   width: 50%;
+   padding: 10px;
+}
+
+/* ================================= some features ====================*/
+
+.scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.scrollToTop:hover {
+  background-color: #555;
+}
+
+.resizable {
+  margin: 5px;
+  background-color: #FFFACD;
+  height: 200px;
+  width: 200px;
+}
+
+.delete-button {
+  border: none;
+  background-color: crimson;
+  color: white;
+  /*float:right;*/
+}
+
+
+ol.sticky-note-content-list  {
+  list-style-type: none;
+}
+
+
+/*hopscotch numbering css*/
+div.hopscotch-bubble .hopscotch-bubble-number {
+  color: black;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding-left: 8px;
+}

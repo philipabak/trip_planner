@@ -1,0 +1,19 @@
+<div class="row <%= expense_tracker.id %>">
+  <div class="col-md-1">
+    <div style="padding-left:50px;">
+      <%= link_to fa_icon("minus-square"), expense_tracker_path(expense_tracker), {method: :delete, remote: true} %>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <%= expense_tracker.category %>
+  </div>
+  <div class="col-md-2">
+    <%= expense_tracker.date.strftime("%b/%d/%Y") %>
+  </div>
+  <div class="col-md-4">
+    <%= expense_tracker.description %>
+  </div>
+  <div class="col-md-1">
+    <%= expense_tracker.price %>
+  </div>
+</div>

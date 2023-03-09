@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TheJourney</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <%= render 'layouts/nav_bar' %>
+    <%= render 'layouts/flash' %>
+
+    <div class="header_img">
+      <%= image_tag 'header_img.jpg', class:"d-block w-100", alt: "Header Image"%>
+    </div>
+
+    <div>
+      <%= yield %>
+    </div>
+  </body>
+</html>
